@@ -17,6 +17,7 @@ class Wine(BaseModel):
     batches: List[conlist(item_type=float, min_length=13, max_length=13)]
 
 
+# Comentário para forçar o github actions (segundo teste).
 @app.post("/predict")
 def predict(wine: Wine):
     batches = wine.batches
